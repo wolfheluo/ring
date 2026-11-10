@@ -12,7 +12,7 @@ const stages = [
 const input=document.querySelector('#level');
 const imageRoot=document.querySelector('#images');
 const images=stages.slice(0,-1).map((stage,i)=>{
-  const img=new Image();img.src=`assets/ring-${i}.webp`;img.alt='';img.className=`ring${i===0?' active':''}`;img.draggable=false;imageRoot.append(img);return img;
+  const img=new Image();img.src=`assets/ring-${i}-transparent.png`;img.alt='';img.className=`ring${i===0?' active':''}`;img.draggable=false;imageRoot.append(img);return img;
 });
 const ticks=Array.from({length:81},()=>{const tick=document.createElement('span');tick.className='tick';document.querySelector('#ruler').append(tick);return tick});
 let stageIndex=-1;
