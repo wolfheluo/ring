@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="拖動刻度，探索戒指從價格到無價的旅程。">
+  <title>Ring — Priceless</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="experience" aria-label="戒指的價值">
+    <div class="artwork" aria-hidden="true">
+      <div id="images"></div>
+      <div class="halo"><div class="halo-core"></div></div>
+    </div>
+    <section class="caption" aria-live="polite" aria-atomic="true">
+      <h1 id="price">¥1,750,000</h1>
+      <p><span id="name">Harry Winston</span><span id="description">Emerald-cut diamond</span></p>
+    </section>
+    <div class="control">
+      <div class="ruler" id="ruler" aria-hidden="true"></div>
+      <input id="level" type="range" min="0" max="1000" value="0" step="1" aria-label="戒指等級，由鑽戒到無價" aria-valuetext="Harry Winston，¥1,750,000">
+      <div class="endpoints" aria-hidden="true"><span id="leftLabel">¥1,750,000</span><span id="rightLabel">Priceless</span></div>
+      <span class="hint">拖動刻度，探索戒指的價值</span>
+    </div>
+    <p class="promise">我說 我願意 我都願意</p>
+    <footer>krain</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
