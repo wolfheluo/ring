@@ -1,40 +1,15 @@
-# Transparent ring assets
+# Ring asset provenance
 
-## Added concept rings
+## Active added photographs
 
-Seven transparent product images were generated with the built-in imagegen tool (not CLI). These unbranded concept designs and their prices are illustrative, not retail quotations.
+Seven real photographs replace the previously generated concept images. `source-assets/sources.json` records the source page, photographer, license, original filename and deployed cutout for each. The originals are retained in `source-assets/`. Public attribution and license links are in `dist/credits.html`. Prices are illustrative, not product quotations.
 
-### ring-solitaire.png
+Background extraction uses the built-in imagegen tool. It is AI-assisted editing and may alter fine details; it is not a pixel-exact masking guarantee. Keep the original photographs for comparison. The modified photographs retain their respective original licenses, including ShareAlike where applicable.
 
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A round brilliant diamond solitaire on a slender polished platinum band, medium sized stone, six prongs. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
+Shared prompt: "Use case: background-extraction. Edit target: this REAL photograph. Remove ONLY background, surface, support rod if any, and background visible inside ring holes to genuine transparent alpha. Preserve EXACT photographed ring geometry, texture, photographic imperfections, reflections, lighting and original camera angle. No redraw, beautification, invention, rotation, repositioning or change to design. Keep full original framing and ring size. If two rings are present preserve both. No text. Faithful photographic cutout, not a new product render."
 
-### ring-sapphire.png
+Diamond refinement prompt: "Fix only the alpha mask of this photo cutout: REMOVE the entire gray/brown fog halo around the ring and the opaque gray inside the ring hole. All non-jewelry pixels must have alpha zero. Retain ONLY the physical metal and diamonds, crisp original photographed details, existing framing and exact geometry. No glow, shadow, floor, new reflections, redraw or new jewelry. True transparent background."
 
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: An oval deep blue sapphire with two small side diamonds on a polished white gold band. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
+## Original video assets
 
-### ring-gold.png
-
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A simple elegant solid yellow gold wedding band, gently rounded profile. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
-
-### ring-silver.png
-
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A minimalist polished sterling silver band with a small single clear stone. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
-
-### ring-steel.png
-
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A plain brushed stainless steel band with a subtle polished edge. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
-
-### ring-beaded.png
-
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A handmade ring of tiny ivory seed beads with one small pale blue bead. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
-
-### ring-wire.png
-
-Use case: product-mockup. Asset type: transparent product photograph for a minimal ring slider website. Subject: A simple handmade thin copper wire ring with a small spiral knot. One ring only, upright circular band facing camera, gemstone at twelve o'clock where present, slightly elevated front view. Entire ring centered, occupying 70% of canvas width and 70% height, generous transparent margins. Soft neutral studio jewelry photography, realistic material detail, crisp delicate edges. Actual transparent alpha background including the ring's empty center. No text, logos, watermark, hands, box, floor, or cast reflection. Square canvas.
-
-
-The eight `dist/assets/ring-*-transparent.png` files were produced with the built-in imagegen tool from the corresponding video-extracted WebP files. Original WebP files are retained for reference. The website consumes the transparent PNGs.
-
-Prompt used for each asset:
-
-> Use case: background-extraction. Edit target: the supplied ring product image. Remove only its white background, including the empty center of the ring, to actual transparent alpha. Preserve the EXACT ring design, metal/diamond highlights or delicate fibers, existing scale, position, orientation, and full original framing. Preserve the subtle reflection as translucent if possible. Do not add objects, do not redesign, do not crop or enlarge. Return a clean transparent cutout for a website transition on white and dark backgrounds.
+The eight `ring-*-transparent.png` assets are cutouts of the user-supplied reference video’s WebP frames. These existing assets are unchanged.

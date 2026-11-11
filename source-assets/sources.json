@@ -1,0 +1,79 @@
+[
+  {
+    "id": "solitaire",
+    "title": "Classic Diamond Engagement Ring.jpg",
+    "author": "Petragems / Petra Gems",
+    "author_url": "https://www.petragems.com/",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Classic_Diamond_Engagement_Ring.jpg",
+    "original": "solitaire.jpg",
+    "cutout": "photo-solitaire.png"
+  },
+  {
+    "id": "ceylon",
+    "title": "Ceylon Sapphire ring.jpg",
+    "author": "gemteck1",
+    "author_url": "https://www.flickr.com/photos/65303620@N00/374123816",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Ceylon_Sapphire_ring.jpg",
+    "original": "ceylon.jpg",
+    "cutout": "photo-ceylon.png"
+  },
+  {
+    "id": "yellow-sapphire",
+    "title": "Engagement ring 18K yellow gold with yellow sapphire and diamonds.jpg",
+    "author": "Lorraine Hughes / Dot the Jewellers",
+    "author_url": "https://dotthejewellers.com/",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Engagement_ring_18K_yellow_gold_with_yellow_sapphire_and_diamonds.jpg",
+    "original": "yellow-sapphire.jpg",
+    "cutout": "photo-yellow-sapphire.png"
+  },
+  {
+    "id": "gold",
+    "title": "Fede nuziale Classica.jpg",
+    "author": "Scheggia.agm",
+    "author_url": "https://commons.wikimedia.org/wiki/User:Scheggia.agm",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Fede_nuziale_Classica.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fede_nuziale_Classica.jpg",
+    "original": "gold.jpg",
+    "cutout": "photo-gold.png"
+  },
+  {
+    "id": "titanium",
+    "title": "Titanium-Wedding-Band-n11-01.jpg",
+    "author": "Tirings",
+    "author_url": "https://commons.wikimedia.org/wiki/User:Tirings",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Titanium-Wedding-Band-n11-01.jpg",
+    "original": "titanium.jpg",
+    "cutout": "photo-titanium.png"
+  },
+  {
+    "id": "silver",
+    "title": "Amore ring sterling silver I.jpg",
+    "author": "Mark Somma",
+    "author_url": "https://www.flickr.com/photos/48889071767@N01/2201389661",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Amore_ring_sterling_silver_I.jpg",
+    "original": "silver.jpg",
+    "cutout": "photo-silver.png"
+  },
+  {
+    "id": "wood",
+    "title": "Wooden Wedding Bands made out of Black Ebony and Maple wood.jpg",
+    "author": "Matendie",
+    "author_url": "https://commons.wikimedia.org/wiki/User:Matendie",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Wooden_Wedding_Bands_made_out_of_Black_Ebony_and_Maple_wood.jpg",
+    "original": "wood.jpg",
+    "cutout": "photo-wood.png"
+  }
+]
