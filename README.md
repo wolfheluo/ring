@@ -6,4 +6,6 @@ Drag the ruler, tap its position, or focus it and use arrow keys. Home selects t
 
 The eight original images are cropped from the user's reference video. Some product descriptions are approximations where the recording is unclear. Original-stage prices reproduce the reference and are not current retail quotations.
 
-Seven additional real-photograph ring cutouts bridge the gap between luxury jewelry and everyday rings. Original photographs, authors and licenses are recorded in `source-assets/sources.json` and the website’s `credits.html`. AI-assisted background extraction was used; these are photo-based edits, not untouched originals. Stages are ordered by non-increasing illustrative price; added prices are narrative values, not retail quotations.
+Seven additional front-facing product photographs bridge the price stages. Each image is selected for a circular, single-ring silhouette. Background extraction uses imagegen without changing the photographed angle; display alignment uses uniform scale and translation, never perspective warping or unequal axis scaling. Active photo sources are in `source-assets/front-sources.json`; no open reuse license has been verified for these commercial images. This revision is for local design review and has not been deployed. Previous Wikimedia photographs and license records remain in `source-assets/sources.json`.
+
+All prices are narrative values, not retail quotations. Run `node tests/verify-ring.cjs` from this directory to check stage transitions and assets.

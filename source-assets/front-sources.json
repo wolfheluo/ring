@@ -1,0 +1,79 @@
+[
+  {
+    "id": "diamond",
+    "title": "Art Deco platinum diamond solitaire",
+    "source": "https://www.antiquejewellerycompany.com/shop/art-deco-platinum-2-10-carat-old-european-cut-diamond-solitaire-ring/",
+    "image_url": "https://images.antiquejewellerycompany.com/2022/08/DSC06001-750x563.jpg",
+    "credit": "The Antique Jewellery Company",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/diamond.jpg",
+    "cutout": "front-diamond.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "sapphire",
+    "title": "Edwardian gold sapphire solitaire",
+    "source": "https://www.antiquejewellerycompany.com/shop/edwardian-18ct-gold-sapphire-solitaire-ring/",
+    "image_url": "https://images.antiquejewellerycompany.com/2021/08/2c435d46-dsc07557-750x563.jpg",
+    "credit": "The Antique Jewellery Company",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/sapphire.jpg",
+    "cutout": "front-sapphire.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "ivy",
+    "title": "Ivy leaf gold wedding ring",
+    "source": "https://www.antiquejewellerycompany.com/shop/18ct-gold-wedding-ring-with-ivy-leaf-detail/",
+    "image_url": "https://images.antiquejewellerycompany.com/2022/07/DSC04725-750x563.jpg",
+    "credit": "The Antique Jewellery Company",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/ivy.jpg",
+    "cutout": "front-ivy.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "gold",
+    "title": "Gold wedding ring assayed in 1936",
+    "source": "https://www.antiquejewellerycompany.com/shop/22ct-gold-wedding-ring-assayed-in-1936-2/",
+    "image_url": "https://images.antiquejewellerycompany.com/2024/10/DSC06641-copy-750x563.jpg",
+    "credit": "The Antique Jewellery Company",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/gold.jpg",
+    "cutout": "front-gold.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "mint",
+    "title": "886 Bold Band in sterling silver",
+    "source": "https://886.royalmint.com/products/886-bold-band-ring-in-sterling-silver",
+    "image_url": "https://886.royalmint.com/cdn/shop/products/jlbr-ls-886-band-ring-large-silver-flat-square.jpg?v=1692308867&width=1080",
+    "credit": "886 Royal Mint",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/mint.jpg",
+    "cutout": "front-mint.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "silver",
+    "title": "Undercover silver band",
+    "source": "https://clothbase.com/items/6c8b8e2c_undercover-silver-band-ring_undercover",
+    "image_url": "https://cdn.clothbase.com/uploads/82eb2e5f-7c91-43ef-9fb2-15d24f359e2d/211414M147046_2.jpg",
+    "credit": "Undercover / Clothbase",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/silver.jpg",
+    "cutout": "front-silver.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  },
+  {
+    "id": "plain",
+    "title": "Elli Basic Design silver band",
+    "source": "https://en.zalando.de/elli-ring-silber-el051l24x-d11.html",
+    "image_url": "https://img01.ztat.net/article/spp-media-p1/d409cb93d8964eb1a79481f57bc0fa61/c98ce91e7ea84bcd8218ebb024acae94.jpg?imwidth=762",
+    "credit": "Elli / Zalando",
+    "license": "No open license verified; retained for local design review only.",
+    "original": "front/plain.jpg",
+    "cutout": "front-plain.png",
+    "modifications": "Background extraction only; original photographed angle retained. Display uses uniform scale and translation."
+  }
+]

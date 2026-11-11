@@ -1,5 +1,17 @@
 # Ring asset provenance
 
+## Active front-facing photographs
+
+Built-in imagegen background-extraction prompt for all seven active cutouts: Use case: background-extraction. This is a real front-on photograph of a SINGLE ring with an already circular band. Remove ONLY the white/gray backdrop and any floor shadow, including background inside the ring hole, to actual transparent alpha. CRITICAL: preserve the EXACT original pixels' photographic appearance, ring silhouette, circular geometry, existing original camera angle, scratches, reflections, colors and all detail. Do not re-render, smooth, beautify, redraw, rotate, stretch or invent any part. Keep original full framing and original subject size. Ring must stay a perfect-looking circle just as photographed. Genuine transparent background, no glow, no reflections below ring, no shadows, no extra objects.
+
+Seven single-ring, front-on product photographs were selected for a circular band silhouette. Originals are in `source-assets/front/`; sources, credit and rights status are in `source-assets/front-sources.json`. No open reuse license has been verified for these commercial photographs; they are retained for local design review only. No deployment or hosting changes were made. Prices are illustrative and do not represent source products.
+
+Only background extraction uses imagegen. No camera-angle synthesis is requested. AI-assisted masking may still alter fine details; compare against the originals. Browser framing uses only uniform scale and translation. `dist/ring-frames.js` records measured band centers and diameters.
+
+## Previous revision
+
+# Ring asset provenance
+
 ## Active added photographs
 
 Seven real photographs replace the previously generated concept images. `source-assets/sources.json` records the source page, photographer, license, original filename and deployed cutout for each. The originals are retained in `source-assets/`. Public attribution and license links are in `dist/credits.html`. Prices are illustrative, not product quotations.

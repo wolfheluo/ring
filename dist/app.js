@@ -3,13 +3,13 @@ const stages = [
   {price:'¥1,750,000',name:'Chaumet',description:'Joséphine pear tiara',image:'ring-2-transparent.png'},
   {price:'¥1,550,000',name:'Cartier',description:'Pavé band, halo setting',image:'ring-1-transparent.png'},
   {price:'¥1,400,000',name:'Diamond',description:'A promise set in stone',image:'ring-3-transparent.png'},
-  {price:'¥700,000',name:'Diamond band',description:'A brilliant promise',image:'photo-solitaire.png'},
-  {price:'¥300,000',name:'Sapphire',description:'A little piece of the blue',image:'photo-ceylon.png'},
-  {price:'¥100,000',name:'Yellow sapphire',description:'A little warmth to carry',image:'photo-yellow-sapphire.png'},
-  {price:'¥30,000',name:'Gold bands',description:'Two circles, one promise',image:'photo-gold.png'},
-  {price:'¥5,000',name:'Titanium',description:'Simple, strong, together',image:'photo-titanium.png'},
-  {price:'¥500',name:'Silver hearts',description:'Two hearts, side by side',image:'photo-silver.png'},
-  {price:'¥50',name:'Wooden bands',description:'Warm grain, simple love',image:'photo-wood.png'},
+  {price:'¥700,000',name:'Diamond solitaire',description:'A brilliant promise',image:'front-diamond.png'},
+  {price:'¥300,000',name:'Sapphire',description:'A little piece of the blue',image:'front-sapphire.png'},
+  {price:'¥100,000',name:'Ivy gold',description:'Cling to me',image:'front-ivy.png'},
+  {price:'¥30,000',name:'Gold band',description:'A circle of warm gold',image:'front-gold.png'},
+  {price:'¥5,000',name:'Silver band',description:'Simple, strong, together',image:'front-mint.png'},
+  {price:'¥500',name:'Polished silver',description:'A little light, every day',image:'front-silver.png'},
+  {price:'¥50',name:'Simple band',description:'A small, everyday promise',image:'front-plain.png'},
   {price:'¥3',name:'Ribbon',description:'',image:'ring-4-transparent.png'},
   {price:'¥0',name:'Can tab',description:'',image:'ring-5-transparent.png'},
   {price:'¥0',name:'Dried grass',description:'The ring you made',image:'ring-6-transparent.png'},
@@ -20,7 +20,17 @@ const lastStage=stages.length-1;
 const input=document.querySelector('#level');
 const imageRoot=document.querySelector('#images');
 const images=stages.slice(0,-1).map((stage,i)=>{
-  const img=new Image();img.src=`assets/${stage.image}`;img.alt='';img.className=`ring${i===0?' active':''}`;img.draggable=false;imageRoot.append(img);return img;
+  const img=new Image();img.src=`assets/${stage.image}`;img.alt='';img.className=`ring${i===0?' active':''}`;img.draggable=false;
+  // Align the measured band opening, not the image's transparent canvas.
+  // Both axes use the same pixel scale, preserving the photographed shape.
+  const frame=ringFrames[stage.image];
+  const scale=554/frame.diameter;
+  img.style.inset='auto';
+  img.style.width=`${frame.width*scale/1334*100}%`;
+  img.style.height=`${frame.height*scale/1179*100}%`;
+  img.style.left=`${(667-frame.cx*scale)/1334*100}%`;
+  img.style.top=`${(669-frame.cy*scale)/1179*100}%`;
+  imageRoot.append(img);return img;
 });
 const ticks=Array.from({length:81},()=>{const tick=document.createElement('span');tick.className='tick';document.querySelector('#ruler').append(tick);return tick});
 let stageIndex=-1;

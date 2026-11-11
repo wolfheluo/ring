@@ -5,6 +5,7 @@ class Element{
 }
 const elements={};const get=id=>elements[id]??=new Element();
 const context={document:{querySelector:get,createElement:()=>new Element(),body:new Element()},Image:Element,Event:class{constructor(type){this.type=type}}};
+vm.runInNewContext(fs.readFileSync('dist/ring-frames.js','utf8'),context);
 vm.runInNewContext(fs.readFileSync('dist/app.js','utf8'),context);
 const stages=vm.runInNewContext('stages',context);
 const input=get('#level');
@@ -33,3 +34,17 @@ for(const stage of stages.slice(0,-1)){
  assert.ok(fs.statSync(`dist/assets/${stage.image}`).size>1000);
 }
 console.log(`PASS: all ${stages.length} stages, descending prices, matching assets, forward/reverse keyboard navigation, endpoint clamping and dark finale.`);
+
+const frames=vm.runInNewContext('ringFrames',context);
+for(const [i,img] of get('#images').children.entries()){
+ const frame=frames[stages[i].image];
+ const renderedWidth=parseFloat(img.style.width)/100*1334;
+ const renderedHeight=parseFloat(img.style.height)/100*1179;
+ const scale=renderedWidth/frame.width;
+ assert.ok(Math.abs(scale-renderedHeight/frame.height)<1e-8,'Image must use uniform scaling');
+ assert.ok(Math.abs(parseFloat(img.style.left)/100*1334+frame.cx*scale-667)<1e-6,'Band center X must match');
+ assert.ok(Math.abs(parseFloat(img.style.top)/100*1179+frame.cy*scale-669)<1e-6,'Band center Y must match');
+ assert.ok(Math.abs(frame.diameter*scale-554)<1e-6,'Band opening diameter must match');
+ if(stages[i].image.startsWith('front-'))assert.ok(frame.axisRatio<1.08,'Replacement must already have a circular band');
+}
+console.log('PASS: all band centers and diameters align with uniform scaling; new photographs have near-circular openings.');
